@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de gringo</title>
+</head>
+<body>
+    Sua nacionalidade: <input type="text" name="" id="txtp">
+    <input type="button" value="Verificar" onclick="ver()">
+    <div id="res"> </div>
+    <script>
+        function ver(){
+            var pais = document.getElementById('txtp')
+            var p = String(pais.value)
+
+            if (p != 'Brasil' && p!= 'brasil' ) {
+                res.innerHTML = '<p>Eca, outro gringo! Cai fora!</p>'
+            } 
+            else {
+                res.innerHTML = '<p>Opa! Outro BR :D</p>'
+            }
+        }
+    </script>
+</body>
+</html>
